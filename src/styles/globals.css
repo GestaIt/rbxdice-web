@@ -1,0 +1,65 @@
+@tailwind base;
+
+@layer base {
+  body {
+    @apply bg-[#0A0B12]
+  }
+
+  h1 {
+    @apply font-bold text-white/90
+  }
+
+  p {
+    @apply font-normal text-white/60
+  }
+
+  span {
+    @apply text-inherit
+  }
+
+  button {
+    @apply text-white/90
+  }
+
+  input {
+    @apply bg-transparent outline-transparent outline-0 border-transparent border-0 text-white text-sm
+  }
+
+  textarea {
+    @apply bg-transparent outline-transparent outline-0 border-transparent border-0 text-white text-sm
+  }
+
+  .branding-grad {
+    @apply bg-clip-text font-extrabold bg-gradient-to-b text-transparent from-blue-300 to-blue-500
+  }
+
+  .no-m {
+    @apply !hidden lg:!flex
+  }
+
+  .container {
+    @apply flex flex-row backdrop-blur-sm gap-1 px-1.5 h-11 bg-white/[0.07] rounded-md shadow-md
+  }
+
+  .within {
+    @apply rounded-md backdrop-blur-sm bg-black/40 shadow-black/40 shadow-inner flex flex-row items-center gap-1 px-1.5
+  }
+
+  .trans-fast {
+    @apply transition-all duration-300 ease-out
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+body {
+  z-index: 1;
+  background-size: cover;
+  background: url("/bg.png") scroll center;
+  background-size: cover;
+}
+
+.purple-glow {
+  box-shadow: mediumpurple 0 0 20px 3px;
+}
